@@ -3,7 +3,7 @@ import OfferCard from "../cards/OfferCard"
 
 const offers = [
   {
-    src: "/images/home/offers_card_01_collection_spread.webp",
+    src: "/chillika/images/home/offers_card_01_collection_spread.webp",
     alt: "Collection spread offer",
     iconSemantic: "percentage",
     title: "10% Discount on Collections",
@@ -11,7 +11,7 @@ const offers = [
     button: "Order Now",
   },
   {
-    src: "/images/home/offers_card_02_happy_hours.webp",
+    src: "/chillika/images/home/offers_card_02_happy_hours.webp",
     alt: "Happy hours offer",
     iconSemantic: "clock",
     title: "The Happies Hours",
@@ -19,7 +19,7 @@ const offers = [
     button: "Order Now",
   },
   {
-    src: "/images/home/offers_card_03_delivery_table.webp",
+    src: "/chillika/images/home/offers_card_03_delivery_table.webp",
     alt: "Free home delivery offer",
     iconSemantic: "delivery_truck",
     title: "Free Home Delivery on orders over £25",

@@ -10,7 +10,7 @@ export default function Hero() {
     >
       {/* Hero image */}
       <img
-        src="/images/home/hero_primary_image.webp"
+        src="/chillika/images/home/hero_primary_image.webp"
         alt="Chillika Indian street food hero image"
         className="absolute inset-0 w-full h-full object-cover"
         style={{ objectPosition: "60% 50%" }}

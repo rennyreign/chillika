@@ -4,25 +4,25 @@ import MenuCard from "../cards/MenuCard"
 const menuItems = [
   {
     id: "menu_01",
-    src: "/images/home/menu_card_01_dahi_bara_aloo_dum.webp",
+    src: "/chillika/images/home/menu_card_01_dahi_bara_aloo_dum.webp",
     alt: "Dahi Bara Aloo Dum dish",
     title: "Dahi Bara Aloo Dum",
   },
   {
     id: "menu_02",
-    src: "/images/home/menu_card_02_soya_chaap_tikka.webp",
+    src: "/chillika/images/home/menu_card_02_soya_chaap_tikka.webp",
     alt: "Soya Chaap Tikka dish",
     title: "Soya Chaap Tikka",
   },
   {
     id: "menu_03",
-    src: "/images/home/menu_card_03_goat_curry.webp",
+    src: "/chillika/images/home/menu_card_03_goat_curry.webp",
     alt: "Goat Curry dish",
     title: "Goat Curry",
   },
   {
     id: "menu_04",
-    src: "/images/home/menu_card_04_biryani.webp",
+    src: "/chillika/images/home/menu_card_04_biryani.webp",
     alt: "Biryani dish",
     title: "Biryani",
   },

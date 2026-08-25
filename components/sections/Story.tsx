@@ -24,7 +24,7 @@ export default function Story() {
         {/* Left visual */}
         <div className="relative" style={{ width: "100%" }}>
           <img
-            src="/images/home/story_restaurant_interior.webp"
+            src="/chillika/images/home/story_restaurant_interior.webp"
             alt="Chillika restaurant interior"
             className="object-cover"
             style={{
@@ -35,7 +35,7 @@ export default function Story() {
             }}
           />
           <img
-            src="/images/home/story_food_inset.webp"
+            src="/chillika/images/home/story_food_inset.webp"
             alt="Chillika food inset detail"
             className="absolute object-cover"
             style={{

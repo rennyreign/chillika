@@ -33,7 +33,7 @@ export default function Nav() {
         {/* Logo */}
         <a href="#home" className="flex-shrink-0">
           <img
-            src="/images/home/brand_logo_primary.webp"
+            src="/chillika/images/home/brand_logo_primary.webp"
             alt="Chillika logo"
             style={{ width: "150px", maxHeight: "50px", objectFit: "contain" }}
           />

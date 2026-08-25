@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Brand column */}
           <div>
             <img
-              src="/images/home/brand_logo_primary.webp"
+              src="/chillika/images/home/brand_logo_primary.webp"
               alt="Chillika logo"
               style={{ width: "150px", objectFit: "contain" }}
             />
@@ -136,7 +136,7 @@ export default function Footer() {
               195 Broadway, Bexleyheath DA6 7ER London
             </p>
             <img
-              src="/images/home/footer_location_map.webp"
+              src="/chillika/images/home/footer_location_map.webp"
               alt="Chillika location map"
               className="object-cover"
               style={{
