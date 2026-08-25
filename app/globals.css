@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), Arial, sans-serif;
+  --font-serif: var(--font-serif), Georgia, serif;
+
+  /* Palette */
+  --color-forest-darkest: #092e21;
+  --color-forest-primary: #123d2d;
+  --color-forest-secondary: #174a37;
+  --color-forest-muted: #426b58;
+  --color-cream-page: #fbf9f4;
+  --color-cream-warm: #f5efe5;
+  --color-white: #ffffff;
+  --color-text-dark: #25241f;
+  --color-text-mid: #5e5a51;
+  --color-text-light: #f8f5ee;
+  --color-burnt-orange: #d85d18;
+  --color-burnt-orange-dark: #b94714;
+  --color-warm-gold: #d89a27;
+  --color-warm-gold-light: #e8bc6c;
+  --color-border-light: #e9e2d8;
+  --color-border-warm: #e4c7ac;
+  --color-review-star: #d9971d;
+  --color-active-gold: #e8a34a;
+
+  /* Radii */
+  --radius-button: 8px;
+  --radius-small: 8px;
+  --radius-card: 14px;
+  --radius-image: 14px;
+  --radius-large: 18px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-card-resting: 0 10px 28px rgba(45, 32, 20, 0.08);
+  --shadow-card-hover: 0 18px 40px rgba(45, 32, 20, 0.13);
+  --shadow-floating-panel: 0 14px 34px rgba(8, 38, 27, 0.2);
+  --shadow-overlap-image: 0 12px 28px rgba(0, 0, 0, 0.24);
+  --shadow-button: 0 5px 14px rgba(120, 55, 15, 0.18);
+}
+
+@layer base {
+  html {
+    background-color: #fbf9f4;
+    color: #25241f;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ::selection {
+    background-color: #d85d18;
+    color: #ffffff;
+  }
+
+  section[id] {
+    scroll-margin-top: 6rem;
+  }
+
+  /* Visible focus styles */
+  a:focus-visible,
+  button:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(216, 93, 24, 0.28);
+  }
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: page-enter 0.55s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+@keyframes progress-grow {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #d85d18;
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: 100;
+  animation: progress-grow 0.55s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.4s cubic-bezier(0.32, 0.72, 0, 1) both;
+}
+
+/* Offer card hover shadow */
+.offer-card:hover {
+  box-shadow: 0 18px 40px rgba(45, 32, 20, 0.13);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
